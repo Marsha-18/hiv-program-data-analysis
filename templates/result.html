@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f9;
+            padding: 30px;
+        }
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        h1 { color: #176b5b; }
+        .result {
+            background: #e7f4ef;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 6px;
+        }
+        a, button {
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Prediction Results</h1>
+
+```
+<div class="result">
+    <h3>Predicted Viral Suppression Outcome</h3>
+    <p>{{ suppression_result }}</p>
+</div>
+
+<div class="result">
+    <h3>Estimated CD4 Count</h3>
+    <p>{{ cd4_prediction }}</p>
+</div>
+
+<p>
+    These are model-generated estimates based on synthetic project data.
+    They are not confirmed clinical results.
+</p>
+
+<a href="/predict">Make Another Prediction</a>
+<br>
+<a href="/">Return to Home</a>
+```
+
+</div>
+</body>
+</html>
